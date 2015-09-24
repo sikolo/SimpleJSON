@@ -714,7 +714,12 @@ namespace SimpleJSON
         {
             get { return m_Dict.Count; }
         }
- 
+        public Dictionary<string, JSONNode>.KeyCollection keys
+        {
+            get {
+                return m_Dict.Keys;
+            }
+        }
  
         public override void Add(string aKey, JSONNode aItem)
         {
